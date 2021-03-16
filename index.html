@@ -12,47 +12,37 @@
       crossorigin="anonymous"
     />
     <style>
-      p {
-        border: black 5px solid;
-      }
-
-      /* .col-5,
-      .col-1 {
-        border: black 5px solid;
+      /* .col-6 {
+        border: black 1px solid;
       } */
-
-      .row.row1 {
-        border: black 5px solid;
-      }
     </style>
   </head>
   <body>
-    <p style="color: red; font-size: 50px">My Paragraph</p>
-    <input type="text" />
-    <button type="button" class="btn btn-primary mb-2">Primary</button>
-    <button class="btn btn-secondary">Test</button>
-
+    <!-- /* How do I make the button same size as the input box? */ -->
     <div class="container">
-      <div class="row row1">
-        <div class="col-5">col</div>
-        <div class="col-5">col</div>
-        <div class="col-1">col</div>
-        <div class="col-1">col</div>
-      </div>
       <div class="row">
-        <div class="col-5">col</div>
-        <div class="col-5">col</div>
-        <div class="col-1">col</div>
-        <div class="col-1">col</div>
-      </div>
+        <div class="col-12" align="center">
+          <p style="color: red; font-size: 50px">Excercise 1</p>
+        </div>
 
-      <div class="row">
-        <div class="col-4"></div>
-        <div class="col-4"></div>
-        <div class="col-4"></div>
-        <div class="col-4"></div>
+        <div class="col-6" align="end">
+          <label for="number"> Enter Number here </label>
+          <input type="text" id="number" />
+        </div>
+
+        <div class="col-6">
+          <button
+            id="myBtn"
+            type="button"
+            class="btn btn-primary mr-2 p-1"
+            onclick="myFunction()"
+          >
+            Show me
+          </button>
+        </div>
       </div>
     </div>
-    <script src="script.js"></script>
+
+    <script src="show_number.js"></script>
   </body>
 </html>
